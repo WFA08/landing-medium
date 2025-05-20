@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tu Web Profesional en 48 Horas</title>
+  <meta name="description" content="Creamos tu página web profesional en solo 48 horas. Aumenta tus ventas con un sitio moderno, elegante, rápido y conectado a tu WhatsApp." />
+  <meta name="keywords" content="landing page, diseño web, páginas web, desarrollo web, whatsapp, negocios online, diseño profesional" />
+  <meta name="author" content="Fernando Arana" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #222;
+      background-color: #fff;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1507209696998-3c532be9b2b2') no-repeat center center/cover;
+      height: 100vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 1rem;
+      position: relative;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      z-index: 1000;
+      transition: background 0.3s ease;
+    }
+    nav.scrolled {
+      background: rgba(0, 0, 0, 0.85);
+    }
+    .nav-logo {
+      color: white;
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+    }
+    .nav-links a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    .nav-links a:hover {
+      color: #25d366;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .cta-button {
+      background: #25d366;
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    .cta-button:hover {
+      background: #1db954;
+    }
+    .section {
+      padding: 4rem 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section h2 {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #111;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .feature {
+      background: #f9f9f9;
+      border-radius: 10px;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+    .feature:hover {
+      transform: translateY(-5px);
+    }
+    .feature i {
+      font-size: 2.5rem;
+      color: #25d366;
+      margin-bottom: 1rem;
+    }
+    .testimonials {
+      background: #f0f0f0;
+      padding: 4rem 1rem;
+    }
+    .testimonial {
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      font-style: italic;
+      text-align: center;
+    }
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 24px;
+      text-align: center;
+      text-decoration: none;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      z-index: 999;
+    }
+    @media (max-width: 768px) {
+      header h1 { font-size: 2rem; }
+      header p { font-size: 1rem; }
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .nav-links {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.5rem;
+      }
+      .nav-links a {
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="nav-logo">TuLogo</div>
+    <div class="nav-links">
+      <a href="#">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#testimonios">Testimonios</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </nav>
+
+  <header>
+    <div>
+      <h1>Transforma tu negocio con una web potente</h1>
+      <p>Te creamos una landing page optimizada, moderna, conectada a WhatsApp y lista para vender en 48h</p>
+      <a href="https://wa.me/56940972795" class="cta-button" target="_blank">Solicita la tuya ahora</a>
+    </div>
+  </header>
+
+  <section class="section" id="servicios">
+    <h2>Lo que obtienes</h2>
+    <div class="features">
+      <div class="feature">
+        <i class="fas fa-mobile-alt"></i>
+        <h3>Responsive</h3>
+        <p>Tu web se ve perfecta en celulares, tablets y PCs.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-rocket"></i>
+        <h3>Velocidad & SEO</h3>
+        <p>Optimizada para aparecer en Google y cargar en segundos.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-comments"></i>
+        <h3>Conexión directa</h3>
+        <p>Botón directo a tu WhatsApp para cerrar ventas sin esfuerzo.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-edit"></i>
+        <h3>Editable</h3>
+        <p>Podrás personalizar textos, fotos y servicios fácilmente.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-magic"></i>
+        <h3>Diseño Premium</h3>
+        <p>Diseño elegante, moderno y visualmente atractivo.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-tools"></i>
+        <h3>Soporte</h3>
+        <p>Te acompañamos si necesitas cambios o ayuda técnica.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonios">
+    <h2>Clientes felices</h2>
+    <div class="testimonial">“Fernando me entregó una página lista en 24 horas, moderna y ya tengo más clientes desde que la publiqué. ¡Gracias!” – Ana R.</div>
+    <div class="testimonial">“Increíble el resultado. Mejor de lo que imaginé, con botón directo a WhatsApp y muy rápida.” – Juan C.</div>
+  </section>
+
+  <footer id="contacto">
+    &copy; 2025 Fernando Arana | Web Profesional. Todos los derechos reservados.
+  </footer>
+
+  <a href="https://wa.me/56940972795" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+  <script>
+    window.addEventListener('scroll', function () {
+      const nav = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+  </script>
+
+</body>
+</html>
